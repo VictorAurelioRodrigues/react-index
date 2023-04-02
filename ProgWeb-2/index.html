@@ -1,0 +1,57 @@
+import React from 'react';
+
+function Home() {
+  return (
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a className="navbar-brand" href="#">Meu Blog</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link" href="/">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/blog-form">Formulário</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/images">Imagens</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/text-element">Texto</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/tables">Tabelas</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div className="container mt-4">
+        <h1>Bem-vindo ao Meu Blog</h1>
+        <p>Aqui você encontra as últimas postagens:</p>
+        <table className="table">
+          <thead className="thead-dark">
+            <tr>
+              <th>Postagens</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">Postagem 1</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Postagem 2</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Postagem 3</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+export default Home;
